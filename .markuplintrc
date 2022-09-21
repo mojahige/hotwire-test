@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "markuplint:recommended"
+  ],
+  "parser": {
+    "\\.html$": "@markuplint/html-parser"
+  },
+  "rules": {
+    "invalid-attr": {
+      "option": {
+        "attrs": {
+          "type": {
+            "pattern": "/[a-z]+/"
+          }
+        }
+      }
+    }
+  }
+}

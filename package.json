@@ -1,0 +1,20 @@
+{
+  "name": "hotwire-test",
+  "private": true,
+  "packageManager": "npm@8.19.1",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf public/assets/scripts",
+    "dev": "npm run serve & npm run watch",
+    "serve": "live-server --open=public --watch=public --quiet",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@hotwired/stimulus": "^3.1.0",
+    "@hotwired/turbo": "^7.1.0",
+    "live-server": "^1.1.0",
+    "markuplint": "^2.10.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.3"
+  }
+}

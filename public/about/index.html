@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotwire test: About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@hotwired/turbo": "https://cdn.skypack.dev/@hotwired/turbo@7.1.0",
+          "@hotwired/stimulus": "https://cdn.skypack.dev/@hotwired/stimulus@3.1.0"
+        }
+      }
+    </script>
+    <script type="module" src="/public/assets/scripts/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Hotwire test</h1>
+
+      <div data-controller="dropdown-menu">
+        <button type="button">Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <h2>About</h2>
+
+      <ul>
+        <li>
+          <a href="/public">Go to Index</a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
