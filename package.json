@@ -6,6 +6,8 @@
     "build": "npm run clean && tsc",
     "clean": "rimraf public/assets/scripts",
     "dev": "npm run serve & npm run watch",
+    "format": "prettier --cache --write .",
+    "lint": "eslint --cache .",
     "serve": "live-server --open=public --watch=public --quiet",
     "watch": "tsc --watch"
   },
