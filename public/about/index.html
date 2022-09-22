@@ -22,19 +22,31 @@
     <header>
       <h1>Hotwire test</h1>
 
-      <div data-controller="dropdown-menu">
-        <button type="button">Menu</button>
-      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/public">Home</a>
+          </li>
+          <li>
+            <a href="/public/about">About</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <h2>About</h2>
 
-      <ul>
-        <li>
-          <a href="/public">Go to Index</a>
-        </li>
-      </ul>
+      <turbo-frame id="about">
+        <ul>
+          <li>
+            <a href="/public/about/me/" aria-label="Me">👨‍💻</a>
+          </li>
+          <li>
+            <a href="/public/about/github/">GitHub</a>
+          </li>
+        </ul>
+      </turbo-frame>
     </main>
   </body>
 </html>
